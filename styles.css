@@ -1,0 +1,664 @@
+/* =================== Global CSS =================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 16;
+}
+
+i {
+    font-family: 'FontAwesome';
+}
+
+/* =================== Hero Section CSS =================== */
+
+.hero-section {
+    background: url(images/heroSectionBackground.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 16px 48px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .getApp i {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .navbar_menu-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .navbar_menu-container .user-icon {
+    display: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    height: calc(60vh - 60px);
+    padding: 0 40px;
+}
+
+.hero-content .hero-content_logo {
+    width: 220px;
+    height: auto;
+}
+
+.hero-content .hero-content_heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero-content .hero-content_inputs {
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 600px;
+}
+
+.hero-content .hero-content_inputs .search,
+.hero-content .hero-content_inputs .location {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 5px;
+}
+
+.hero-content .hero-content_inputs .location {
+    width: 35%;
+    border-right: 2px solid rgba(19, 19, 19, 0.2);
+}
+
+.hero-content .hero-content_inputs .search {
+    width: 65%;
+}
+
+.hero-content .hero-content_inputs .search-bar,
+.hero-content .hero-content_inputs .location-input {
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+.hero-content .hero-content_inputs .search-bar,
+.hero-content .hero-content_inputs .location-input {
+    width: 100%;
+}
+
+.hero-content .hero-content_inputs #location-icon {
+    color: rgb(255, 75, 75);
+    font-size: 1.2rem;
+}
+
+.hero-content .hero-content_inputs #search-icon {
+    color: rgb(54, 54, 54);
+}
+
+@media only screen and (max-width: 655px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .navbar .navbar_menu-container .links {
+        display: none;
+    }
+
+    .navbar .navbar_menu-container .user-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content {
+        height: calc(80vh - 60px);
+        padding: 0 20px;
+
+    }
+
+    .hero-content .hero-content_heading {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .hero-content .hero-content_inputs {
+        background-color: transparent;
+        flex-direction: column;
+        width: 100%;
+        min-width: unset;
+    }
+
+    .hero-content .hero-content_inputs .search,
+    .hero-content .hero-content_inputs .location {
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+
+/* =================== Container CSS =================== */
+
+.container {
+    margin: 6rem auto;
+    max-width: 1200px;
+    padding: 0 48px;
+}
+
+/* =================== We-Offer Section CSS =================== */
+
+.we-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.we-offer .card {
+    flex: 1;
+    min-width: 220px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+}
+
+.we-offer .card:hover {
+    transform: scale(1.05);
+}
+
+.we-offer .card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we-offer .card .we-offer_content {
+    padding: 10px;
+}
+
+.we-offer .card .we-offer_content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we-offer .card .we-offer_content p {
+    font-size: 12px;
+}
+
+/* =================== Collection Section CSS =================== */
+
+.collection {
+    margin: auto;
+}
+
+.collection h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.collection .collection_sub-heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #2c2c2c;
+}
+
+.collection .collection_sub-heading span:nth-child(2) {
+    color: #ff7e8b;
+    cursor: pointer;
+}
+
+.collection .collection_card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.collection .collection_card-container .collection_card {
+    height: 320px;
+    min-width: 270px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.CCcard1 {
+    background-image: url("images/collection1.jpg");
+}
+
+.CCcard2 {
+    background-image: url("images/collection2.jpg");
+}
+
+.CCcard3 {
+    background-image: url("images/collection3.jpg");
+}
+
+.CCcard4 {
+    background-image: url("images/collection4.jpg");
+}
+
+.collection .collection_card-container .collection_card .overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 85%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.collection .collection_card-container .collection_card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 16px;
+    color: white;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.collection .collection_card-container .collection_card .content h4 {
+    font-weight: 300;
+    font-size: 1.09rem;
+}
+
+.collection .collection_card-container .collection_card .content i {
+    padding-left: 5px;
+}
+
+/* =================== Locality Section CSS =================== */
+
+.locality h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+.locality .locality_container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.locality .locality_container i {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.locality .locality_container .locality_container_card,
+.locality .locality_container .see-more {
+    position: relative;
+    width: calc(32% - 0.5rem);
+    min-height: 80px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.locality .locality_container .locality_container_card:hover,
+.locality .locality_container .see-more:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+.locality .locality_container .see-more {
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.locality .locality_container .locality_container_card .locality_container_card-content h3 {
+    font-weight: 400;
+}
+
+.locality .locality_container .locality_container_card .locality_container_card-content p {
+    font-weight: 300;
+    color: #383838;
+}
+
+@media only screen and (max-width: 580px) {
+
+    .locality .locality_container .locality_container_card,
+    .locality .locality_container .see-more {
+        position: relative;
+        width: 100%;
+        min-height: 80px;
+        border-radius: 10px;
+        border: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    }
+    .locality .locality_container .see-more{
+        justify-content: center;
+    }
+}
+
+/* =================== Get App Section CSS =================== */
+
+.get-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+    padding: 3rem 6rem;
+}
+
+.get-app .semi-container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-app .semi-container .get-app_img-div {
+    flex: 2;
+}
+
+.get-app .get-app_img-div img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get-app .form-div {
+    flex: 3;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.get-app .form-div h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.get-app .form-div p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.get-app .form-div .form-div_radio-button{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.get-app .form-div .form-div_radio-button div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.get-app .form-div .form-div_radio-button div input{
+    accent-color: rgb(239, 79, 95);
+    height: 15px;
+    width: 15px;
+}
+
+.get-app .form-div .form-div_input-container{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.get-app .form-div .form-div_input-container button,
+.get-app .form-div .form-div_input-container input{
+    padding: 10px 12px;
+    border-radius: 5px;
+    outline: none;
+    flex: auto;
+}
+
+.get-app .form-div .form-div_input-container input{
+    position: relative;
+    border: 1px solid rgb(239, 79, 95);
+}
+
+.get-app .form-div .form-div_input-container button{
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.get-app .form-div .download-from {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-app .form-div .download-from h5{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.get-app .form-div .download-from div{
+    display: flex;
+    gap: 1rem;
+}
+
+.get-app .form-div .download-from div img{
+    width: 35%;
+}
+
+@media only screen and (max-width: 880px){
+    .get-app{
+        padding: 3rem 0;
+    }
+    .get-app .semi-container {
+        max-width: 520px;
+    }
+    .get-app .get-app_img-div{
+        flex: 1;
+    }
+    .get-app .form-div{
+        flex: 1;
+    }
+    .get-app .form-div h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .get-app .semi-container {
+        width: 80%;
+    }
+    .get-app .get-app_img-div{
+        display: none;
+    }
+    .get-app .form-div h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+/* =================== Explore Section CSS =================== */
+
+.explorations{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.explorations h1{
+    font-size: 2.15rem;
+    font-weight: 400;
+}
+
+.explorations .options-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.explorations .options-container .options{
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 20px 24px;
+}
+
+.explorations .options-container .options .options_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explorations .options-container .options .options_heading h2{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.explorations .options-container .options div .i-clicked{
+    transform: rotate(180deg);
+}
+
+.explorations .options-container .options .list-style{
+    display: none;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.explorations .options-container .options .list-style a{
+    text-decoration: none;
+    color: #848484;
+    font-weight: 300;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.explorations .options-container .options .list-style a:hover{
+    color: rgba(0, 0, 0);
+}
+
+.dot{
+    display: inline-block;
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    vertical-align: middle;
+    background-color: #848484;
+    margin-right: 0.5rem;
+}
+
+.explorations .options-container .options .grid-style{
+    display: none;
+    width: 100%;
+    grid: auto / auto auto auto auto auto;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.explorations .options-container .options .grid-style a{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 2rem;
+    display: inline;
+    text-decoration: none;
+    color: #848484;
+    font-weight: 300;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.explorations .options-container .options .grid-style a:hover{
+    color: rgba(0, 0, 0);
+}
+
+.explorations .options-container .options .grid-style .see-more{
+    width: fit-content;
+    font-weight: 400;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 880px){
+    .explorations .options-container .options .grid-style{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 700px){
+    .explorations h1{
+        position: relative;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .explorations h1::before{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        content: "Explore more";
+        font-size: 2.15rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .explorations .options-container .options .grid-style{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

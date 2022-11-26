@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- zomato logo in the tab -->
+  <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- poppins font by google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- importing styles.css -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- importing index.js -->
+  <script src="index.js"></script>
+
+  <title>Zomato Clone</title>
+</head>
+
+<body>
+  <section class="hero-section">
+    <header>
+      <div class="navbar">
+        <a href="#" class="getApp">
+          <i class="fas fa-mobile-screen-button"></i>
+          Get the App
+        </a>
+        <div class="navbar_menu-container">
+          <a href="#" class="links">Investor Relations</a>
+          <a href="#" class="links">Add Restaurant</a>
+          <a href="#" class="links">Login</a>
+          <a href="#" class="links">Sign Up</a>
+          <a href="#" class="user-icon">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="hero-content">
+      <img src="images\heroSectionLogo.png" alt="Zomato Logo" class="hero-content_logo">
+      <h1 class="hero-content_heading">Discover the best food & drinks in Delhi NCR</h1>
+      <div class="hero-content_inputs">
+        <div class="location">
+          <i class="fa-solid fa-location-dot" id="location-icon"></i>
+          <input type="text" class="location-input" placeholder="TWCA, 1, Ashok Rd, Hanu">
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+          <input type="text" class="search-bar" placeholder="Search for a restaurant, cuisine or a dish">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container we-offer">
+    <div class="card">
+      <img src="images/item1.png" alt="">
+      <div class="we-offer_content">
+        <h2>Order Online</h2>
+        <p>Stay home and order to your doorstep</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/item2.png" alt="">
+      <div class="we-offer_content">
+        <h2>Dining</h2>
+        <p>View the city's favourite dining venue</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/item3.png" alt="">
+      <div class="we-offer_content">
+        <h2>Nightlife and Clubs</h2>
+        <p>Explore the city's top nightlife outlets</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container collection">
+    <h1>Collections</h1>
+    <div class="collection_sub-heading">
+      <span>Explore curated lists of top restaurants, cafes, pubs, and barsin Delhi NCR, based on trends</span>
+      <span>All collections in Delhi NCR</span>
+    </div>
+    <div class="collection_card-container">
+      <div class="collection_card CCcard1">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>75th Independence Special</h4>
+          <span>23 Places </span><i class="fas fa-caret-right"></i>
+        </div>
+      </div>
+      <div class="collection_card CCcard2">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Newly Opened</h4>
+          <span>96 Places </span><i class="fas fa-caret-right"></i>
+        </div>
+      </div>
+      <div class="collection_card CCcard3">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Best of Delhi</h4>
+          <span>53 Places </span><i class="fas fa-caret-right"></i>
+        </div>
+      </div>
+      <div class="collection_card CCcard4">
+        <div class="overlay"></div>
+        <div class="content">
+          <h4>Trending This Week</h4>
+          <span>30 Places </span><i class="fas fa-caret-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container locality">
+    <h1>Popular localities in and around <strong>Delhi NCR</strong></h1>
+    <div class="locality_container">
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>Connaught Place</h3>
+          <p>423 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>Sector 29</h3>
+          <p>269 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>Sector 18, Nodia</h3>
+          <p>301 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>Rajouri Garden</h3>
+          <p>757 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>Saket</h3>
+          <p>681 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>DLF Cyber City</h3>
+          <p>226 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>Golf Course Road</h3>
+          <p>257 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="locality_container_card">
+        <div class="locality_container_card-content">
+          <h3>DLF Phase 4</h3>
+          <p>752 places</p>
+        </div>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="see-more">
+        <p>see more</p>
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="get-app">
+    <div class="semi-container">
+      <div class="get-app_img-div">
+        <img src="images/mobileBanner.png" alt="" />
+      </div>
+      <div class="form-div">
+        <h1>Get the Zomato app</h1>
+        <p>We will send you a link, open it on your phone to download the app</p>
+        <div class="form-div_radio-button">
+          <div>
+            <input type="radio" name="download_app" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="download_app" id="phone">
+            <label for="phone">Phone</label>
+          </div>
+        </div>
+        <div class="form-div_input-container">
+          <input type="email" placeholder='Email'>
+          <button> Share App Link </button>
+        </div>
+        <div class="download-from">
+          <h5>Download app from</h5>
+          <div>
+            <img src="images/playStore.png" alt="">
+            <img src="images/appleStore.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container explorations">
+    <h1>Explore options near me</h1>
+    <div class="options-container">
+      <div class="options">
+        <div class="options_heading" onclick="showOptions(this)">
+          <h2>Popular cuisines near me</h2>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="list-style">
+        </div>
+      </div>
+      <div class="options">
+        <div class="options_heading" onclick="showOptions(this)">
+          <h2>Popular restaurant types near me</h2>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="list-style">
+        </div>
+      </div>
+      <div class="options">
+        <div class="options_heading" onclick="showOptions(this)">
+          <h2>Top Restaurant Chains</h2>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="grid-style">
+        </div>
+      </div>
+      <div class="options">
+        <div class="options_heading" onclick="showOptions(this)">
+          <h2>Cities We Deliver To</h2>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="grid-style">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer"></section>
+</body>
+</html>
